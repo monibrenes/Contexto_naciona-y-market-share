@@ -41,21 +41,59 @@
           <div class="kpi" aria-live="polite"><div class="label">Población de 15 años o más</div><div class="value" id="kpi-15mas">79.1%</div><div class="bar" aria-hidden="true"><span id="bar-15" style="width:79.1%"></span></div><div class="mini muted">INEC, ECE</div></div>
         </div>
       </section>
+
       <section class="grid-cards" aria-label="Indicadores principales">
-        <article class="card vstack" aria-labelledby="tit-pet"><h2 id="tit-pet">Población en Edad de Trabajar por sexo</h2><div class="row" style="gap:14px; justify-content:space-around; margin-top:4px"><div id="donut-pet-m" aria-label="PET Mujeres" title="Mujeres"></div><div id="donut-pet-h" aria-label="PET Hombres" title="Hombres"></div></div><div class="vstack" style="margin-top:6px"><div class="row"><span class="label">Mujeres</span><span id="pet-mujeres">50.2%</span></div><div class="row"><span class="label">Hombres</span><span id="pet-hombres">49.8%</span></div><p class="mini muted">Fuente: INEC – Estimación de población y vivienda 2022</p></div></article>
-        <article class="card vstack" aria-labelledby="tit-banca"><h2 id="tit-banca">Bancarización 15+ (producto financiero formal)</h2><div class="row" style="gap:14px; justify-content:space-around; margin-top:4px"><div id="donut-bm" aria-label="Bancarización Mujeres" title="Mujeres"></div><div id="donut-bh" aria-label="Bancarización Hombres" title="Hombres"></div></div><div class="vstack" style="margin-top:6px"><div class="row"><span class="label">Mujeres</span><span id="banca-mujeres">61.1%</span></div><div class="row"><span class="label">Hombres</span><span id="banca-hombres">76.3%</span></div><p class="mini muted">Fuente: Global Findex 2021</p></div></article>
-        <article class="card vstack" aria-labelledby="tit-pea"><h2 id="tit-pea">Participación laboral por sexo</h2><div class="row" style="gap:14px"><div id="donut-m" aria-label="Mujeres participación" title="Mujeres"></div><div id="donut-h" aria-label="Hombres participación" title="Hombres"></div></div><div class="vstack" style="margin-top:6px"><div class="row"><span class="label">Mujeres</span><span id="pea-mujeres">43.7%</span></div><div class="row"><span class="label">Hombres</span><span id="pea-hombres">68.1%</span></div><p class="mini muted">Fuente: INEC, ECE I 2024</p></div></article>
+        <article class="card vstack" aria-labelledby="tit-pet">
+          <h2 id="tit-pet">Población en Edad de Trabajar por sexo</h2>
+          <div class="row" style="gap:14px; justify-content:space-around; margin-top:4px">
+            <div id="donut-pet-m" aria-label="PET Mujeres" title="Mujeres"></div>
+            <div id="donut-pet-h" aria-label="PET Hombres" title="Hombres"></div>
+          </div>
+          <div class="vstack" style="margin-top:6px">
+            <div class="row"><span class="label">Mujeres</span><span id="pet-mujeres">50.2%</span></div>
+            <div class="row"><span class="label">Hombres</span><span id="pet-hombres">49.8%</span></div>
+            <p class="mini muted">Fuente: INEC – Estimación de población y vivienda 2022</p>
+          </div>
+        </article>
+
+        <article class="card vstack" aria-labelledby="tit-banca">
+          <h2 id="tit-banca">Bancarización 15+ (producto financiero formal)</h2>
+          <div class="row" style="gap:14px; justify-content:space-around; margin-top:4px">
+            <div id="donut-bm" aria-label="Bancarización Mujeres" title="Mujeres"></div>
+            <div id="donut-bh" aria-label="Bancarización Hombres" title="Hombres"></div>
+          </div>
+          <div class="vstack" style="margin-top:6px">
+            <div class="row"><span class="label">Mujeres</span><span id="banca-mujeres">61.1%</span></div>
+            <div class="row"><span class="label">Hombres</span><span id="banca-hombres">76.3%</span></div>
+            <p class="mini muted">Fuente: Global Findex 2021</p>
+          </div>
+        </article>
+
+        <article class="card vstack" aria-labelledby="tit-pea">
+          <h2 id="tit-pea">Participación laboral por sexo</h2>
+          <div class="row" style="gap:14px">
+            <div id="donut-m" aria-label="Mujeres participación" title="Mujeres"></div>
+            <div id="donut-h" aria-label="Hombres participación" title="Hombres"></div>
+          </div>
+          <div class="vstack" style="margin-top:6px">
+            <div class="row"><span class="label">Mujeres</span><span id="pea-mujeres">43.7%</span></div>
+            <div class="row"><span class="label">Hombres</span><span id="pea-hombres">68.1%</span></div>
+            <p class="mini muted">Fuente: INEC, ECE I 2024</p>
+          </div>
+        </article>
       </section>
 
       <!-- ========================================================= -->
       <!-- 2) MARKET SHARE -->
-      <section class="card card-lg hero ms-hero" aria-labelledby="tit-ms" style="margin-top:16px"><h1 id="tit-ms" class="title-gradient">2. Market Share- Mujeres</h1></section>
+      <section class="card card-lg hero ms-hero" aria-labelledby="tit-ms" style="margin-top:16px">
+        <h1 id="tit-ms" class="title-gradient">2. Market Share- Mujeres</h1>
+      </section>
 
       <!-- Heatmap Mujeres + Donut Prospectos PP Mujeres (lado a lado) -->
       <section class="ms-grid" aria-label="Market Share – Heatmap y Prospectos" style="margin-top:12px">
         <article class="card vstack ms-col-6">
-          <h2>Heatmap por Segmento Operativo</h2>
-          <div id="ms-heat-f" class="plot-fill" role="img" aria-label="Heatmap Mujeres"></div>
+          <h2>Heatmap por Segmento Estratégico</h2>
+          <div id="ms-heat-f" class="plot-fill" role="img" aria-label="HEATMAP MUJERES"></div>
         </article>
         <article class="card vstack ms-col-6 ms-hero" aria-labelledby="tit-ppm-donut">
           <h2 id="tit-ppm-donut">Clientes Potenciales- Prioritario Plus</h2>
@@ -67,9 +105,9 @@
         </article>
       </section>
 
-      <!-- Footnote de conclusión (verde oscuro, blanco, negrita) -->
+      <!-- Footnote de conclusión -->
       <div class="footnote" role="contentinfo">
-        En mujeres las mujeres existe un amplio potencial aún sin consolidar.
+        En Costa Rica, las mujeres representan un segmento estratégico con gran potencial de negocio que Promerica tiene la oportunidad de consolidar.
       </div>
 
     </div>
@@ -77,34 +115,201 @@
 
   <!-- ====== Datos de contexto (original) ====== -->
   <script>
-    const CR_DATA = { pais: "Costa Rica", poblacion_total: 5290340, pct_mayores_15: 79.1, pet_mujeres_pct: 50.2, pet_hombres_pct: 49.8, bancarizacion_mujeres_pct: 61.1, bancarizacion_hombres_pct: 76.3, pea_mujeres_pct: 43.7, pea_hombres_pct: 68.1, fuentes: [ { label: "INEC – Encuesta Continua de Empleo (I 2024)", url: "https://www.inec.cr/" }, { label: "World Bank – Global Findex 2021 (género)", url: "https://globalfindex.worldbank.org/" } ] };
+    const CR_DATA = {
+      pais: "Costa Rica",
+      poblacion_total: 5290340,
+      pct_mayores_15: 79.1,
+      pet_mujeres_pct: 50.2,
+      pet_hombres_pct: 49.8,
+      bancarizacion_mujeres_pct: 61.1,
+      bancarizacion_hombres_pct: 76.3,
+      pea_mujeres_pct: 43.7,
+      pea_hombres_pct: 68.1,
+      fuentes: [
+        { label: "INEC – Encuesta Continua de Empleo (I 2024)", url: "https://www.inec.cr/" },
+        { label: "World Bank – Global Findex 2021 (género)", url: "https://globalfindex.worldbank.org/" }
+      ]
+    };
+
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function formatPct(x){ if(x == null || Number.isNaN(x)) return 'Dato no disponible'; return `${Number(x).toFixed(1)}%`; }
+
+    function formatPct(x){
+      if(x == null || Number.isNaN(x)) return 'Dato no disponible';
+      return `${Number(x).toFixed(1)}%`;
+    }
+
     function createDonut(percent, size=130, track='#e6e8e6', colorStart='var(--green-600)', colorEnd='var(--green-400)'){
       const p = Math.max(0, Math.min(100, Number(percent || 0)));
-      const stroke = 12; const r = (size/2) - stroke; const c = 2*Math.PI*r;
-      const svg = document.createElementNS('http://www.w3.org/2000/svg','svg'); svg.setAttribute('width', size); svg.setAttribute('height', size); svg.setAttribute('viewBox', `0 0 ${size} ${size}`);
-      const defs = document.createElementNS(svg.namespaceURI,'defs'); const grad = document.createElementNS(svg.namespaceURI,'linearGradient'); grad.setAttribute('id', `g${Math.random().toString(36).slice(2)}`); grad.setAttribute('x1','0%'); grad.setAttribute('x2','100%'); grad.setAttribute('y1','0%'); grad.setAttribute('y2','0%'); const s1 = document.createElementNS(svg.namespaceURI,'stop'); s1.setAttribute('offset','0%'); s1.setAttribute('stop-color', colorStart); const s2 = document.createElementNS(svg.namespaceURI,'stop'); s2.setAttribute('offset','100%'); s2.setAttribute('stop-color', colorEnd); grad.append(s1,s2); defs.appendChild(grad); svg.appendChild(defs);
-      const cx=size/2, cy=size/2; const bg = document.createElementNS(svg.namespaceURI,'circle'); bg.setAttribute('cx',cx); bg.setAttribute('cy',cy); bg.setAttribute('r',r); bg.setAttribute('fill','none'); bg.setAttribute('stroke',track); bg.setAttribute('stroke-width',stroke);
-      const fg = document.createElementNS(svg.namespaceURI,'circle'); fg.setAttribute('cx',cx); fg.setAttribute('cy',cy); fg.setAttribute('r',r); fg.setAttribute('fill','none'); fg.setAttribute('stroke',`url(#${grad.id})`); fg.setAttribute('stroke-width',stroke); fg.setAttribute('stroke-linecap','round'); fg.setAttribute('transform',`rotate(-90 ${cx} ${cy})`); fg.setAttribute('stroke-dasharray', `${(p/100)*2*Math.PI*r} ${2*Math.PI*r}`); if(!prefersReduced){ fg.style.transition = 'stroke-dasharray .4s ease'; requestAnimationFrame(()=>{ fg.setAttribute('stroke-dasharray', `${(p/100)*c} ${c}`); }); }
-      const text = document.createElementNS(svg.namespaceURI,'text'); text.setAttribute('x',cx); text.setAttribute('y',cy+5); text.setAttribute('text-anchor','middle'); text.setAttribute('font-size','18'); text.setAttribute('font-weight','700'); text.setAttribute('fill','var(--green-700)'); text.textContent = formatPct(percent); svg.append(bg, fg, text); return svg; }
-    function setBar(el, pct){ if(!el) return; const v = Math.max(0, Math.min(100, Number(pct||0))); el.style.width = v + '%'; }
-    function renderContexto(){ const d = CR_DATA; setBar(document.getElementById('bar-15'), d.pct_mayores_15); const dpm=document.getElementById('donut-pet-m'); if(dpm){ dpm.innerHTML=''; dpm.appendChild(createDonut(d.pet_mujeres_pct,130)); } const dph=document.getElementById('donut-pet-h'); if(dph){ dph.innerHTML=''; dph.appendChild(createDonut(d.pet_hombres_pct,130)); } const dbm=document.getElementById('donut-bm'); if(dbm){ dbm.innerHTML=''; dbm.appendChild(createDonut(d.bancarizacion_mujeres_pct,130)); } const dbh=document.getElementById('donut-bh'); if(dbh){ dbh.innerHTML=''; dbh.appendChild(createDonut(d.bancarizacion_hombres_pct,130)); } const dm=document.getElementById('donut-m'); if(dm){ dm.innerHTML=''; dm.appendChild(createDonut(d.pea_mujeres_pct,130)); } const dh=document.getElementById('donut-h'); if(dh){ dh.innerHTML=''; dh.appendChild(createDonut(d.pea_hombres_pct,130)); } const ul=document.getElementById('lista-fuentes'); if(ul){ ul.innerHTML=''; d.fuentes.forEach(f=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=f.url; a.textContent=f.label; a.target='_blank'; a.rel='noopener'; li.appendChild(a); ul.appendChild(li); }); } } document.addEventListener('DOMContentLoaded', renderContexto);
+      const stroke = 12;
+      const r = (size/2) - stroke;
+      const c = 2*Math.PI*r;
+
+      const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+      svg.setAttribute('width', size);
+      svg.setAttribute('height', size);
+      svg.setAttribute('viewBox', `0 0 ${size} ${size}`);
+
+      const defs = document.createElementNS(svg.namespaceURI,'defs');
+      const grad = document.createElementNS(svg.namespaceURI,'linearGradient');
+      grad.setAttribute('id', `g${Math.random().toString(36).slice(2)}`);
+      grad.setAttribute('x1','0%'); grad.setAttribute('x2','100%'); grad.setAttribute('y1','0%'); grad.setAttribute('y2','0%');
+      const s1 = document.createElementNS(svg.namespaceURI,'stop'); s1.setAttribute('offset','0%'); s1.setAttribute('stop-color', colorStart);
+      const s2 = document.createElementNS(svg.namespaceURI,'stop'); s2.setAttribute('offset','100%'); s2.setAttribute('stop-color', colorEnd);
+      grad.append(s1,s2); defs.appendChild(grad); svg.appendChild(defs);
+
+      const cx=size/2, cy=size/2;
+
+      const bg = document.createElementNS(svg.namespaceURI,'circle');
+      bg.setAttribute('cx',cx); bg.setAttribute('cy',cy); bg.setAttribute('r',r);
+      bg.setAttribute('fill','none'); bg.setAttribute('stroke',track); bg.setAttribute('stroke-width',stroke);
+
+      const fg = document.createElementNS(svg.namespaceURI,'circle');
+      fg.setAttribute('cx',cx); fg.setAttribute('cy',cy); fg.setAttribute('r',r);
+      fg.setAttribute('fill','none'); fg.setAttribute('stroke',`url(#${grad.id})`);
+      fg.setAttribute('stroke-width',stroke); fg.setAttribute('stroke-linecap','round');
+      fg.setAttribute('transform',`rotate(-90 ${cx} ${cy})`);
+      fg.setAttribute('stroke-dasharray', `${(p/100)*2*Math.PI*r} ${2*Math.PI*r}`);
+      if(!prefersReduced){
+        fg.style.transition = 'stroke-dasharray .4s ease';
+        requestAnimationFrame(()=>{ fg.setAttribute('stroke-dasharray', `${(p/100)*c} ${c}`); });
+      }
+
+      const text = document.createElementNS(svg.namespaceURI,'text');
+      text.setAttribute('x',cx); text.setAttribute('y',cy+5); text.setAttribute('text-anchor','middle');
+      text.setAttribute('font-size','18'); text.setAttribute('font-weight','700');
+      text.setAttribute('fill','var(--green-700)'); text.textContent = formatPct(percent);
+
+      svg.append(bg, fg, text);
+      return svg;
+    }
+
+    function setBar(el, pct){
+      if(!el) return;
+      const v = Math.max(0, Math.min(100, Number(pct||0)));
+      el.style.width = v + '%';
+    }
+
+    function renderContexto(){
+      const d = CR_DATA;
+      setBar(document.getElementById('bar-15'), d.pct_mayores_15);
+
+      const dpm=document.getElementById('donut-pet-m'); if(dpm){ dpm.innerHTML=''; dpm.appendChild(createDonut(d.pet_mujeres_pct,130)); }
+      const dph=document.getElementById('donut-pet-h'); if(dph){ dph.innerHTML=''; dph.appendChild(createDonut(d.pet_hombres_pct,130)); }
+      const dbm=document.getElementById('donut-bm'); if(dbm){ dbm.innerHTML=''; dbm.appendChild(createDonut(d.bancarizacion_mujeres_pct,130)); }
+      const dbh=document.getElementById('donut-bh'); if(dbh){ dbh.innerHTML=''; dbh.appendChild(createDonut(d.bancarizacion_hombres_pct,130)); }
+      const dm=document.getElementById('donut-m'); if(dm){ dm.innerHTML=''; dm.appendChild(createDonut(d.pea_mujeres_pct,130)); }
+      const dh=document.getElementById('donut-h'); if(dh){ dh.innerHTML=''; dh.appendChild(createDonut(d.pea_hombres_pct,130)); }
+
+      const ul=document.getElementById('lista-fuentes');
+      if(ul){
+        ul.innerHTML='';
+        d.fuentes.forEach(f=>{
+          const li=document.createElement('li');
+          const a=document.createElement('a');
+          a.href=f.url; a.textContent=f.label; a.target='_blank'; a.rel='noopener';
+          li.appendChild(a); ul.appendChild(li);
+        });
+      }
+    }
+    document.addEventListener('DOMContentLoaded', renderContexto);
   </script>
 
   <!-- ====== Market Share data (completo, etiquetas ajustadas) ====== -->
   <script id="market-share-rows" type="application/json">[{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente activo","CANTIDAD":50406},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":25113},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"prospectos","CANTIDAD":1033280},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":29489},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":3691},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"prospectos","CANTIDAD":91477},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente activo","CANTIDAD":16160},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":5739},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"prospectos","CANTIDAD":582330},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":32765},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":7954},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"prospectos","CANTIDAD":376659},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente activo","CANTIDAD":64234},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":39919},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"prospectos","CANTIDAD":1618626},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":36615},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":6172},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"prospectos","CANTIDAD":279792},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente activo","CANTIDAD":19579},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":6690},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"prospectos","CANTIDAD":687201},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":45399},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":10905},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"prospectos","CANTIDAD":386946}]</script>
 
-  <!-- ====== Heatmap % Mujeres con Plotly ====== -->
+  <!-- ====== Heatmap % Mujeres con Plotly (leyendas en MAYÚSCULAS) ====== -->
   <script>
     function cssVar(name, fb){ const v=getComputedStyle(document.documentElement).getPropertyValue(name); return (v && v.trim()) || fb; }
-    const PALETTE = { g700: cssVar('--green-700','#0a5b35'), g600: cssVar('--green-600','#006338'), g400: cssVar('--green-400','#61BF1A'), lime: cssVar('--lime-500','#B9C301'), muted: cssVar('--muted','#f4f7f4'), grid: cssVar('--border','#e6e8e6') };
-    function MS_rows(){ try{ return JSON.parse(document.getElementById('market-share-rows').textContent||'[]'); }catch(e){ return []; } }
-    function msMatrixPercent(sexo){ const rows = MS_rows().filter(r=>r.SEXO===sexo); const segs=[...new Set(rows.map(r=>r.SEGMENTACION_ESTRATEGICA))]; const estados=[...new Set(rows.map(r=>r.ESTADO_PERSONA))]; const totalSexo = rows.reduce((a,b)=>a+(+b.CANTIDAD||0),0); const M = segs.map(seg=> estados.map(est=> rows.filter(r=>r.SEGMENTACION_ESTRATEGICA===seg && r.ESTADO_PERSONA===est).reduce((a,b)=>a+(+b.CANTIDAD||0),0))); const Z = M.map(row=>row.map(v=> totalSexo? v/totalSexo*100:0)); const text = Z.map(row=>row.map(v=> v.toFixed(1)+'%')); return {segs, estados, Z, text}; }
-    function renderHeatPercent(targetId, sexo){ const {segs, estados, Z, text} = msMatrixPercent(sexo); const colorscale=[[0,PALETTE.muted],[1, PALETTE.g600]]; const layout={margin:{l:90,r:20,t:10,b:50}, xaxis:{tickangle:-15, automargin:true}, yaxis:{automargin:true}, paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)'}; const config={displayModeBar:false, responsive:true}; Plotly.react(targetId,[{type:'heatmap', x:estados, y:segs, z:Z, text:text, hovertemplate:'%{y} / %{x}<br>%{text}<extra></extra>', colorscale, showscale:true}], layout, config); }
-    function renderMS(){ renderHeatPercent('ms-heat-f','FEMENINO'); }
-    document.addEventListener('DOMContentLoaded', ()=>{ renderMS(); setTimeout(()=>{ ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{ if(document.getElementById(id)) Plotly.Plots.resize(id); }); }, 60); });
-    window.addEventListener('resize', ()=>{ ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{ if(document.getElementById(id)) Plotly.Plots.resize(id); }); });
+    const PALETTE = {
+      g700: cssVar('--green-700','#0a5b35'),
+      g600: cssVar('--green-600','#006338'),
+      g400: cssVar('--green-400','#61BF1A'),
+      lime: cssVar('--lime-500','#B9C301'),
+      muted: cssVar('--muted','#f4f7f4'),
+      grid: cssVar('--border','#e6e8e6')
+    };
+
+    function MS_rows(){
+      try{ return JSON.parse(document.getElementById('market-share-rows').textContent||'[]'); }
+      catch(e){ return []; }
+    }
+
+    function msMatrixPercent(sexo){
+      const rows = MS_rows().filter(r=>r.SEXO===sexo);
+      const segs   = [...new Set(rows.map(r=>r.SEGMENTACION_ESTRATEGICA))];
+      const estados= [...new Set(rows.map(r=>r.ESTADO_PERSONA))];
+      const totalSexo = rows.reduce((a,b)=>a+(+b.CANTIDAD||0),0);
+
+      const M = segs.map(seg=>
+        estados.map(est=>
+          rows
+            .filter(r=>r.SEGMENTACION_ESTRATEGICA===seg && r.ESTADO_PERSONA===est)
+            .reduce((a,b)=>a+(+b.CANTIDAD||0),0)
+        )
+      );
+      const Z = M.map(row=>row.map(v=> totalSexo? v/totalSexo*100:0));
+      const text = Z.map(row=>row.map(v=> (v.toFixed(1)+'%').toUpperCase()));
+
+      // Devolver también versiones MAYÚSCULAS para ejes y leyendas
+      const segsU = segs.map(s=>String(s).toUpperCase());
+      const estadosU = estados.map(s=>String(s).toUpperCase());
+
+      return {segs, estados, segsU, estadosU, Z, text};
+    }
+
+    function renderHeatPercent(targetId, sexo){
+      const {segsU, estadosU, Z, text} = msMatrixPercent(sexo);
+
+      const colorscale = [
+        [0, PALETTE.muted],
+        [1, PALETTE.g600]
+      ];
+
+      const data = [{
+        type:'heatmap',
+        x: estadosU,   // leyendas X en MAYÚSCULAS
+        y: segsU,      // leyendas Y en MAYÚSCULAS
+        z: Z,
+        text: text,    // hover en MAYÚSCULAS
+        hovertemplate:'%{y} / %{x}<br>%{text}<extra></extra>',
+        colorscale,
+        showscale:true,
+        colorbar:{
+          title:{ text: '' }, // **único cambio solicitado: sin "% DEL TOTAL"**
+          ticksuffix:'%'
+        }
+      }];
+
+      const layout = {
+        margin:{l:110,r:20,t:10,b:60},
+        xaxis:{ tickangle:-15, automargin:true },
+        yaxis:{ automargin:true },
+        paper_bgcolor:'rgba(0,0,0,0)',
+        plot_bgcolor:'rgba(0,0,0,0)'
+      };
+
+      const config = { displayModeBar:false, responsive:true };
+      Plotly.react(targetId, data, layout, config);
+    }
+
+    function renderMS(){
+      renderHeatPercent('ms-heat-f','FEMENINO');
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+      renderMS();
+      setTimeout(()=>{
+        ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{
+          if(document.getElementById(id)) Plotly.Plots.resize(id);
+        });
+      }, 60);
+    });
+
+    window.addEventListener('resize', ()=>{
+      ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{
+        if(document.getElementById(id)) Plotly.Plots.resize(id);
+      });
+    });
   </script>
 
   <!-- ====== Serie PP Mujeres 2025 (para donut) ====== -->
@@ -112,7 +317,65 @@
 
   <!-- ====== Donut Prospectos PP Mujeres (cantidad al centro; arco = prospectos/universo) ====== -->
   <script>
-    (function(){ function createDonutQty(percent, label, size=300){ const stroke=22, r=(size/2)-stroke, c=2*Math.PI*r; const p=Math.max(0,Math.min(100,Number(percent||0))); const svg=document.createElementNS('http://www.w3.org/2000/svg','svg'); svg.setAttribute('width',size); svg.setAttribute('height',size); svg.setAttribute('viewBox',`0 0 ${size} ${size}`); const defs=document.createElementNS(svg.namespaceURI,'defs'); const grad=document.createElementNS(svg.namespaceURI,'linearGradient'); grad.setAttribute('id',`g${Math.random().toString(36).slice(2)}`); grad.setAttribute('x1','0%'); grad.setAttribute('x2','100%'); const s1=document.createElementNS(svg.namespaceURI,'stop'); s1.setAttribute('offset','0%'); s1.setAttribute('stop-color','var(--green-600)'); const s2=document.createElementNS(svg.namespaceURI,'stop'); s2.setAttribute('offset','100%'); s2.setAttribute('stop-color','var(--green-400)'); grad.append(s1,s2); defs.appendChild(grad); svg.appendChild(defs); const cx=size/2, cy=size/2; const bg=document.createElementNS(svg.namespaceURI,'circle'); bg.setAttribute('cx',cx); bg.setAttribute('cy',cy); bg.setAttribute('r',r); bg.setAttribute('fill','none'); bg.setAttribute('stroke','#e6e8e6'); bg.setAttribute('stroke-width',stroke); const fg=document.createElementNS(svg.namespaceURI,'circle'); fg.setAttribute('cx',cx); fg.setAttribute('cy',cy); fg.setAttribute('r',r); fg.setAttribute('fill','none'); fg.setAttribute('stroke','url(#'+grad.id+')'); fg.setAttribute('stroke-width',stroke); fg.setAttribute('stroke-linecap','round'); fg.setAttribute('transform',`rotate(-90 ${cx} ${cy})`); fg.setAttribute('stroke-dasharray',`${(p/100)*c} ${c}`); const t=document.createElementNS(svg.namespaceURI,'text'); t.setAttribute('x',cx); t.setAttribute('y',cy+8); t.setAttribute('text-anchor','middle'); t.setAttribute('font-size','30'); t.setAttribute('font-weight','700'); t.setAttribute('fill','var(--green-700)'); t.textContent=label; svg.append(bg,fg,t); return svg; } function rows(){ try{ return JSON.parse(document.getElementById('ppm_hist_2025').textContent||'[]'); }catch(e){ return []; } } function renderDonut(){ const data=rows(); if(!data.length) return; const last=data[data.length-1]; const universo=+last.universo||0; const prospectos=+last.prospectos||0; const pct=universo? (prospectos/universo)*100 : 0; const host=document.getElementById('ms-ppm-donut'); if(!host) return; const fmt=new Intl.NumberFormat('es-CR'); host.innerHTML=''; host.appendChild(createDonutQty(pct, fmt.format(prospectos), 300)); const act=document.getElementById('leg-act'); if(act) act.textContent=fmt.format(+last.activas||0); const pot=document.getElementById('leg-pot'); if(pot) pot.textContent=fmt.format(prospectos); } document.addEventListener('DOMContentLoaded', renderDonut); })();
+    (function(){
+      function createDonutQty(percent, label, size=300){
+        const stroke=22, r=(size/2)-stroke, c=2*Math.PI*r;
+        const p=Math.max(0,Math.min(100,Number(percent||0)));
+        const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+        svg.setAttribute('width',size); svg.setAttribute('height',size);
+        svg.setAttribute('viewBox',`0 0 ${size} ${size}`);
+
+        const defs=document.createElementNS(svg.namespaceURI,'defs');
+        const grad=document.createElementNS(svg.namespaceURI,'linearGradient');
+        grad.setAttribute('id',`g${Math.random().toString(36).slice(2)}`); grad.setAttribute('x1','0%'); grad.setAttribute('x2','100%');
+        const s1=document.createElementNS(svg.namespaceURI,'stop'); s1.setAttribute('offset','0%'); s1.setAttribute('stop-color','var(--green-600)');
+        const s2=document.createElementNS(svg.namespaceURI,'stop'); s2.setAttribute('offset','100%'); s2.setAttribute('stop-color','var(--green-400)');
+        grad.append(s1,s2); defs.appendChild(grad); svg.appendChild(defs);
+
+        const cx=size/2, cy=size/2;
+
+        const bg=document.createElementNS(svg.namespaceURI,'circle');
+        bg.setAttribute('cx',cx); bg.setAttribute('cy',cy); bg.setAttribute('r',r);
+        bg.setAttribute('fill','none'); bg.setAttribute('stroke','#e6e8e6'); bg.setAttribute('stroke-width',stroke);
+
+        const fg=document.createElementNS(svg.namespaceURI,'circle');
+        fg.setAttribute('cx',cx); fg.setAttribute('cy',cy); fg.setAttribute('r',r);
+        fg.setAttribute('fill','none'); fg.setAttribute('stroke','url(#'+grad.id+')'); fg.setAttribute('stroke-width',stroke);
+        fg.setAttribute('stroke-linecap','round'); fg.setAttribute('transform',`rotate(-90 ${cx} ${cy})`);
+        fg.setAttribute('stroke-dasharray',`${(p/100)*c} ${c}`);
+
+        const t=document.createElementNS(svg.namespaceURI,'text');
+        t.setAttribute('x',cx); t.setAttribute('y',cy+8); t.setAttribute('text-anchor','middle');
+        t.setAttribute('font-size','30'); t.setAttribute('font-weight','700'); t.setAttribute('fill','var(--green-700)');
+        t.textContent=label;
+
+        svg.append(bg,fg,t);
+        return svg;
+      }
+
+      function rows(){
+        try{ return JSON.parse(document.getElementById('ppm_hist_2025').textContent||'[]'); }
+        catch(e){ return []; }
+      }
+
+      function renderDonut(){
+        const data=rows(); if(!data.length) return;
+        const last=data[data.length-1];
+        const universo=+last.universo||0;
+        const prospectos=+last.prospectos||0;
+        const pct=universo? (prospectos/universo)*100 : 0;
+
+        const host=document.getElementById('ms-ppm-donut'); if(!host) return;
+        const fmt=new Intl.NumberFormat('es-CR');
+        host.innerHTML='';
+        host.appendChild(createDonutQty(pct, fmt.format(prospectos), 300));
+
+        const act=document.getElementById('leg-act'); if(act) act.textContent=fmt.format(+last.activas||0);
+        const pot=document.getElementById('leg-pot'); if(pot) pot.textContent=fmt.format(prospectos);
+      }
+
+      document.addEventListener('DOMContentLoaded', renderDonut);
+    })();
   </script>
 </body>
 </html>
