@@ -1,35 +1,33 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Infografía – Costa Rica</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
-  <style>
-    :root{ --green-800:#084025; --green-700:#0a5b35; --green-600:#006338; --green-400:#61BF1A; --lime-500:#B9C301; --bg:#FFFFFF; --fg:#000000; --border:#e6e8e6; --card:#ffffff; --muted:#f4f7f4; --soft-green:#eef8ea; --soft-border:#cfe9c9; --shadow:0 8px 20px rgba(0,0,0,.07); --radius:12px; --radius-lg:14px; --maxw:1100px; }
-    *,*::before,*::after{ box-sizing:border-box } html,body{ height:100% } body{ margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); font-size:15px; line-height:1.45 } @media (min-width:1024px){ body{ font-size:16px } }
-    h1{ font-size:clamp(22px,3vw,28px); margin:0 0 8px } h2{ font-size:clamp(18px,2.6vw,24px); margin:0 0 6px } p{ margin:0 0 8px } a{ color:var(--green-700); text-decoration:none } a:hover{ text-decoration:underline }
-    main{ padding:20px 16px } .container{ max-width:var(--maxw); margin:0 auto }
-    .card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px } .card-lg{ border-radius:var(--radius-lg); padding:18px } .muted{ color:#4d4d4d } .title-gradient{ background: linear-gradient(90deg, var(--green-400), var(--lime-500)); -webkit-background-clip:text; background-clip:text; color:transparent }
-    .hero{ display:grid; gap:16px } .kpis{ display:grid; gap:16px; grid-template-columns:1fr } @media (min-width:640px){ .kpis{ grid-template-columns:repeat(2,1fr) } }
-    .kpi{ padding:12px; border:1px solid var(--border); border-radius:12px; display:grid; gap:6px } .kpi .value{ font-size:24px; font-weight:700; color:var(--green-700) } .bar{ height:10px; background:var(--muted); border-radius:999px; overflow:hidden; border:1px solid var(--border) } .bar > span{ display:block; height:100%; width:0; background:linear-gradient(90deg,var(--green-600),var(--green-400)); border-radius:999px; transition:width .4s ease }
-    .grid-cards{ display:grid; gap:16px; grid-template-columns:1fr } @media (min-width:700px){ .grid-cards{ grid-template-columns:repeat(2,1fr) } } @media (min-width:1000px){ .grid-cards{ grid-template-columns:repeat(3,1fr) } }
-    .row{ display:flex; align-items:center; justify-content:space-between; gap:8px } .vstack{ display:grid; gap:6px } .mini{ font-size:12.5px }
-    .ms-hero{ background:var(--soft-green); border:1px solid var(--soft-border); border-radius:var(--radius-lg) }
-    .ms-grid{ display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
-    .ms-col-6{ grid-column:span 12 } @media (min-width:700px){ .ms-col-6{ grid-column:span 6 } }
-    .plot-fill{ width:100%; height:420px } @media (max-width:480px){ .plot-fill{ height:360px } }
-    .donut-wrap{ display:flex; align-items:center; justify-content:center; padding:6px; min-height:420px }
-    .legend-mini{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; font-size:12.5px; color:#444 }
-    .legend-mini .dot{ width:10px; height:10px; display:inline-block; border-radius:999px; margin-right:6px }
-    <!-- Footnote de conclusión -->
-    <div class="footnote" role="contentinfo">
-      La infografía evidencia una fuerte brecha de género: los hombres tienen mayor bancarización y participación laboral, mientras que en mujeres existe un amplio potencial aún sin consolidar.
-    </div>
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Infografía – Costa Rica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+<style>
+:root{ --green-800:#084025; --green-700:#0a5b35; --green-600:#006338; --green-400:#61BF1A; --lime-500:#B9C301; --bg:#FFFFFF; --fg:#000000; --border:#e6e8e6; --card:#ffffff; --muted:#f4f7f4; --soft-green:#eef8ea; --soft-border:#cfe9c9; --shadow:0 8px 20px rgba(0,0,0,.07); --radius:12px; --radius-lg:14px; --maxw:1100px; }
+*,*::before,*::after{ box-sizing:border-box } html,body{ height:100% } body{ margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); font-size:15px; line-height:1.45 } @media (min-width:1024px){ body{ font-size:16px } }
+h1{ font-size:clamp(22px,3vw,28px); margin:0 0 8px } h2{ font-size:clamp(18px,2.6vw,24px); margin:0 0 6px } p{ margin:0 0 8px } a{ color:var(--green-700); text-decoration:none } a:hover{ text-decoration:underline }
+main{ padding:20px 16px } .container{ max-width:var(--maxw); margin:0 auto }
+.card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px } .card-lg{ border-radius:var(--radius-lg); padding:18px } .muted{ color:#4d4d4d } .title-gradient{ background: linear-gradient(90deg, var(--green-400), var(--lime-500)); -webkit-background-clip:text; background-clip:text; color:transparent }
+.hero{ display:grid; gap:16px } .kpis{ display:grid; gap:16px; grid-template-columns:1fr } @media (min-width:640px){ .kpis{ grid-template-columns:repeat(2,1fr) } }
+.kpi{ padding:12px; border:1px solid var(--border); border-radius:12px; display:grid; gap:6px } .kpi .value{ font-size:24px; font-weight:700; color:var(--green-700) } .bar{ height:10px; background:var(--muted); border-radius:999px; overflow:hidden; border:1px solid var(--border) } .bar > span{ display:block; height:100%; width:0; background:linear-gradient(90deg,var(--green-600),var(--green-400)); border-radius:999px; transition:width .4s ease }
+.grid-cards{ display:grid; gap:16px; grid-template-columns:1fr } @media (min-width:700px){ .grid-cards{ grid-template-columns:repeat(2,1fr) } } @media (min-width:1000px){ .grid-cards{ grid-template-columns:repeat(3,1fr) } }
+.row{ display:flex; align-items:center; justify-content:space-between; gap:8px } .vstack{ display:grid; gap:6px } .mini{ font-size:12.5px }
+.ms-hero{ background:var(--soft-green); border:1px solid var(--soft-border); border-radius:var(--radius-lg) }
+.ms-grid{ display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
+.ms-col-6{ grid-column:span 12 } @media (min-width:700px){ .ms-col-6{ grid-column:span 6 } }
+.plot-fill{ width:100%; height:420px } @media (max-width:480px){ .plot-fill{ height:360px } }
+.donut-wrap{ display:flex; align-items:center; justify-content:center; padding:6px; min-height:420px }
+.legend-mini{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; font-size:12.5px; color:#444 }
+.legend-mini .dot{ width:10px; height:10px; display:inline-block; border-radius:999px; margin-right:6px }
+/* Footnote */
+.footnote{ margin-top:16px; background:var(--green-800); color:#fff; padding:12px 16px; border-radius:8px; text-align:center; font-size:14px; font-weight:700 }
+</style>
 </head>
 <body>
   <main>
