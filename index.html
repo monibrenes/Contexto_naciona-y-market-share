@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
   <style>
     :root{ --green-800:#084025; --green-700:#0a5b35; --green-600:#006338; --green-400:#61BF1A; --lime-500:#B9C301; --bg:#FFFFFF; --fg:#000000; --border:#e6e8e6; --card:#ffffff; --muted:#f4f7f4; --soft-green:#eef8ea; --soft-border:#cfe9c9; --shadow:0 8px 20px rgba(0,0,0,.07); --radius:12px; --radius-lg:14px; --maxw:1100px; }
     *,*::before,*::after{ box-sizing:border-box } html,body{ height:100% } body{ margin:0; font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); font-size:15px; line-height:1.45 } @media (min-width:1024px){ body{ font-size:16px } }
@@ -20,12 +19,11 @@
     .row{ display:flex; align-items:center; justify-content:space-between; gap:8px } .vstack{ display:grid; gap:6px } .mini{ font-size:12.5px }
     .ms-hero{ background:var(--soft-green); border:1px solid var(--soft-border); border-radius:var(--radius-lg) }
     .ms-grid{ display:grid; grid-template-columns:repeat(12,1fr); gap:16px }
-    .ms-col-6{ grid-column:span 12 } @media (min-width:700px){ .ms-col-6{ grid-column:span 6 } }
+    .ms-col-6{ grid-column:span 12 } @media (min-width:700px){ .ms-col-6{ grid-column:span 12 } } /* ocupa ancho completo */
     .plot-fill{ width:100%; height:420px } @media (max-width:480px){ .plot-fill{ height:360px } }
     .donut-wrap{ display:flex; align-items:center; justify-content:center; padding:6px; min-height:420px }
     .legend-mini{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; font-size:12.5px; color:#444 }
     .legend-mini .dot{ width:10px; height:10px; display:inline-block; border-radius:999px; margin-right:6px }
-    /* Footnote conclusión */
     .footnote{ margin-top:16px; background:var(--green-800); color:#fff; padding:12px 16px; border-radius:8px; text-align:center; font-size:14px; font-weight:700 }
   </style>
 </head>
@@ -89,12 +87,8 @@
         <h1 id="tit-ms" class="title-gradient">2. Market Share- Mujeres</h1>
       </section>
 
-      <!-- Heatmap Mujeres + Donut Prospectos PP Mujeres (lado a lado) -->
-      <section class="ms-grid" aria-label="Market Share – Heatmap y Prospectos" style="margin-top:12px">
-        <article class="card vstack ms-col-6">
-          <h2>Heatmap por Segmento Estratégico</h2>
-          <div id="ms-heat-f" class="plot-fill" role="img" aria-label="HEATMAP MUJERES"></div>
-        </article>
+      <!-- Solo Donut Prospectos PP Mujeres (heatmap eliminado) -->
+      <section class="ms-grid" aria-label="Market Share – Prospectos Prioritario Plus" style="margin-top:12px">
         <article class="card vstack ms-col-6 ms-hero" aria-labelledby="tit-ppm-donut">
           <h2 id="tit-ppm-donut">Clientes Potenciales- Prioritario Plus</h2>
           <div class="donut-wrap"><div id="ms-ppm-donut"></div></div>
@@ -214,108 +208,10 @@
     document.addEventListener('DOMContentLoaded', renderContexto);
   </script>
 
-  <!-- ====== Market Share data (completo, etiquetas ajustadas) ====== -->
-  <script id="market-share-rows" type="application/json">[{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente activo","CANTIDAD":50406},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":25113},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"prospectos","CANTIDAD":1033280},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":29489},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":3691},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"prospectos","CANTIDAD":91477},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente activo","CANTIDAD":16160},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":5739},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"prospectos","CANTIDAD":582330},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":32765},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":7954},{"SEXO":"FEMENINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"prospectos","CANTIDAD":376659},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente activo","CANTIDAD":64234},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":39919},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo","ESTADO_PERSONA":"prospectos","CANTIDAD":1618626},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":36615},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":6172},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"masivo plus","ESTADO_PERSONA":"prospectos","CANTIDAD":279792},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente activo","CANTIDAD":19579},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":6690},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario","ESTADO_PERSONA":"prospectos","CANTIDAD":687201},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente activo","CANTIDAD":45399},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"cliente inactivo","CANTIDAD":10905},{"SEXO":"MASCULINO","SEGMENTACION_ESTRATEGICA":"Prioritario Plus","ESTADO_PERSONA":"prospectos","CANTIDAD":386946}]</script>
-
-  <!-- ====== Heatmap % Mujeres con Plotly (leyendas en MAYÚSCULAS) ====== -->
-  <script>
-    function cssVar(name, fb){ const v=getComputedStyle(document.documentElement).getPropertyValue(name); return (v && v.trim()) || fb; }
-    const PALETTE = {
-      g700: cssVar('--green-700','#0a5b35'),
-      g600: cssVar('--green-600','#006338'),
-      g400: cssVar('--green-400','#61BF1A'),
-      lime: cssVar('--lime-500','#B9C301'),
-      muted: cssVar('--muted','#f4f7f4'),
-      grid: cssVar('--border','#e6e8e6')
-    };
-
-    function MS_rows(){
-      try{ return JSON.parse(document.getElementById('market-share-rows').textContent||'[]'); }
-      catch(e){ return []; }
-    }
-
-    function msMatrixPercent(sexo){
-      const rows = MS_rows().filter(r=>r.SEXO===sexo);
-      const segs   = [...new Set(rows.map(r=>r.SEGMENTACION_ESTRATEGICA))];
-      const estados= [...new Set(rows.map(r=>r.ESTADO_PERSONA))];
-      const totalSexo = rows.reduce((a,b)=>a+(+b.CANTIDAD||0),0);
-
-      const M = segs.map(seg=>
-        estados.map(est=>
-          rows
-            .filter(r=>r.SEGMENTACION_ESTRATEGICA===seg && r.ESTADO_PERSONA===est)
-            .reduce((a,b)=>a+(+b.CANTIDAD||0),0)
-        )
-      );
-      const Z = M.map(row=>row.map(v=> totalSexo? v/totalSexo*100:0));
-      const text = Z.map(row=>row.map(v=> (v.toFixed(1)+'%').toUpperCase()));
-
-      // Devolver también versiones MAYÚSCULAS para ejes y leyendas
-      const segsU = segs.map(s=>String(s).toUpperCase());
-      const estadosU = estados.map(s=>String(s).toUpperCase());
-
-      return {segs, estados, segsU, estadosU, Z, text};
-    }
-
-    function renderHeatPercent(targetId, sexo){
-      const {segsU, estadosU, Z, text} = msMatrixPercent(sexo);
-
-      const colorscale = [
-        [0, PALETTE.muted],
-        [1, PALETTE.g600]
-      ];
-
-      const data = [{
-        type:'heatmap',
-        x: estadosU,   // leyendas X en MAYÚSCULAS
-        y: segsU,      // leyendas Y en MAYÚSCULAS
-        z: Z,
-        text: text,    // hover en MAYÚSCULAS
-        hovertemplate:'%{y} / %{x}<br>%{text}<extra></extra>',
-        colorscale,
-        showscale:true,
-        colorbar:{
-          title:{ text: '' }, // **único cambio solicitado: sin "% DEL TOTAL"**
-          ticksuffix:'%'
-        }
-      }];
-
-      const layout = {
-        margin:{l:110,r:20,t:10,b:60},
-        xaxis:{ tickangle:-15, automargin:true },
-        yaxis:{ automargin:true },
-        paper_bgcolor:'rgba(0,0,0,0)',
-        plot_bgcolor:'rgba(0,0,0,0)'
-      };
-
-      const config = { displayModeBar:false, responsive:true };
-      Plotly.react(targetId, data, layout, config);
-    }
-
-    function renderMS(){
-      renderHeatPercent('ms-heat-f','FEMENINO');
-    }
-
-    document.addEventListener('DOMContentLoaded', ()=>{
-      renderMS();
-      setTimeout(()=>{
-        ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{
-          if(document.getElementById(id)) Plotly.Plots.resize(id);
-        });
-      }, 60);
-    });
-
-    window.addEventListener('resize', ()=>{
-      ['ms-heat-f','ms-pen-line','ms-ppm-donut'].forEach(id=>{
-        if(document.getElementById(id)) Plotly.Plots.resize(id);
-      });
-    });
-  </script>
-
   <!-- ====== Serie PP Mujeres 2025 (para donut) ====== -->
   <script id="ppm_hist_2025" type="application/json">[{"period":"2025-01-31","activas":5588,"potencial":132013,"recuperables":2370,"prospectos":129643,"universo":137601},{"period":"2025-02-28","activas":6203,"potencial":132393,"recuperables":2228,"prospectos":130165,"universo":138596},{"period":"2025-03-31","activas":6784,"potencial":139460,"recuperables":2206,"prospectos":137254,"universo":146244},{"period":"2025-04-30","activas":7295,"potencial":147293,"recuperables":2200,"prospectos":145093,"universo":154588},{"period":"2025-05-31","activas":7402,"potencial":133613,"recuperables":2254,"prospectos":131359,"universo":141015},{"period":"2025-06-30","activas":8178,"potencial":142059,"recuperables":2223,"prospectos":139836,"universo":150237},{"period":"2025-07-31","activas":8445,"potencial":54596,"recuperables":1738,"prospectos":52858,"universo":63041},{"period":"2025-08-31","activas":8734,"potencial":54343,"recuperables":1735,"prospectos":52608,"universo":63077}]</script>
 
-  <!-- ====== Donut Prospectos PP Mujeres (cantidad al centro; arco = prospectos/universo) ====== -->
+  <!-- ====== Donut Prospectos PP Mujeres ====== -->
   <script>
     (function(){
       function createDonutQty(percent, label, size=300){
@@ -379,3 +275,4 @@
   </script>
 </body>
 </html>
+
